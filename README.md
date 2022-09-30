@@ -15,7 +15,7 @@ This project utilizes a lot of different add ons, please make sure you have all 
 
 * [pandas 1.4.3](https://github.com/pandas-dev/pandas/blob/main/README.md) - For reading the csv files and other operations.
 
-* [scikit-learn](https://scikit-learn.org/stable/index.html)
+* [scikit-learn](https://scikit-learn.org/stable/index.html) - Tools for machine learning and statistical modeling including classification, regression, clustering and dimensionality reduction
 
 * [numpy](https://https://numpy.org/) - Loaded in, not used in the framework, but could be used in future editions.
 
@@ -28,6 +28,8 @@ This project utilizes a lot of different add ons, please make sure you have all 
 * [hvplot v0.8.0](https://github.com/holoviz/hvplot#readme) - For creating interactive and more detailed plots.
 
 * [language-tool](https://pypi.org/project/language-tool-python/) - To detect grammar errors and spelling mistakes.
+
+![image](https://user-images.githubusercontent.com/105394703/193184354-0d034e41-599d-41c9-9bfd-2cef182bfb09.png)
 
 
 ### Algorithms performed
