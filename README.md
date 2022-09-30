@@ -38,11 +38,6 @@ This project utilizes a lot of different add ons, please make sure you have all 
 
 
 
-![Python Logo](images/python.png) ![Numpy Logo](images/Numpy.png) 
-![Mat Plot Logo](images/matplotlib.png) ![Pandas Logo](images/Pandas.png) ![HoloView Logo](images/HoloViews.png) 
-![hv plot logo](images/hvplot.png)
-
-
 ### Convert json to CSV using following commands
 ```
 url = "https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Home_Entertainment_v1_00.tsv.gz"
