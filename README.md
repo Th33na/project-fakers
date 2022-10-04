@@ -36,8 +36,9 @@ This project utilizes a lot of different add ons, please make sure you have all 
 
 * [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
 
-* [RandomForest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+* [Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
 
+* [Support Vector Machine](https://scikit-learn.org/stable/modules/svm.html)
 
 
 ### Convert json to CSV using following commands
@@ -49,12 +50,12 @@ reviews_df = pd.read_csv("amazon_reviews_us_Home_Entertainment_v1_00.csv",sep="\
 
 # Contributors
 
-- Theena Dang
-- Drew Herrera
-- Agnes Maria
-- Nayana Narayanan
-- Matthew Stream
-- Hugo Velazquez 
+- [Theena Dang](https://github.com/Th33na)
+- [Drew Herrera](https://github.com/drew94591)
+- [Agnes Maria](https://github.com/agnesmaria1)
+- [Nayana Narayanan](https://github.com/nayananarayananp)
+- [Matthew Stream](https://github.com/MC-Stream)
+- [Hugo Velazquez](https://github.com/HugoWLA)
 
 # License
-[MIT](license)
+[MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)
