@@ -2,7 +2,7 @@
 
 Online shopping is all over the internet. All our needs are just a click away. The biggest online shopping website is Amazon. Amazon is known not only for its variety of products but also for its strong recommendation system.
 
-Customers increasingly rely on reviews for product information. However, the usefulness of online reviews is impeded by fake reviews that give an untruthful picture of product quality. Therefore, better detection of fake reviews is needed.
+Consumers increasingly rely on reviews for product information. However, the usefulness of online reviews is impeded by fake reviews that give an untruthful picture of product quality. Therefore, better detection of fake reviews is needed.
 
 We creating a machine learning model that can predict whether an online review is fraudulent or not and giving potential buyers the confidence to buy the product based on consumer review.
 
