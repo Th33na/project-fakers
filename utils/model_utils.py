@@ -31,11 +31,11 @@ def load_scaler():
     
 def predict(model, scaler, user_review):
     # predicts the whether a review is bias or not, depending on the model selected
+
     
-    review = user_review.get("review", "")
     verified_purchase = 1 if user_review.get("verified_purchase", False) else 0
 
-    user_review_dict={'competitor mentioned': get_mentions(review), 
+    user_review_dict={'competitor mentioned': get_mentions(review.lower()), 
                   'star rating': user_review.get("star_ratings", 1),
                   'review word count': get_word_count(review), 
                   'total votes': user_review.get("total_votes", 0), 
@@ -49,3 +49,19 @@ def predict(model, scaler, user_review):
     prediction = model.predict(user_review_scaled)
     
     return "Not Bias" if prediction else "Bias"
+
+
+def validate_input_data(user_review):
+    # validates the user input
+    
+    review = user_review.get("review", "")
+    if review is None or len(review) < 10:
+        return False, "Insufficient Review. Please enter more."
+    
+    total_votes = user_review.get("total_votes", 0)
+    helpful_votes = user_review.get("helpful_votes", 0)
+    
+    if helpful_votes > total_votes:
+        return False, "Helpful votes cannot be more than total votes. Please update votes."
+    
+    return True, None

@@ -1,5 +1,5 @@
 import streamlit as st
-from utils.model_utils import load_models, load_scaler, predict, MODEL_INPUT_FILES, DEFAULT_MODEL
+from utils.model_utils import load_models, load_scaler, predict, validate_input_data, MODEL_INPUT_FILES, DEFAULT_MODEL
 
 STAR_RATINGS = range(1,6)
 MODELS = MODEL_INPUT_FILES.keys()
@@ -16,7 +16,7 @@ st.write("Welcome to Project Fakers")
 st.write("Helping you spot a bias review")
 
 
-st.text_area("Review", key="review_string", value="", height=5, max_chars=500)
+st.text_area("Review", key="review_string", value="", height=5, max_chars=5000)
 st.radio("Star Ratings", STAR_RATINGS, horizontal=True, key="star_ratings")
 col1, col2 = st.columns(2)
 with col1:
@@ -36,13 +36,17 @@ if st.button("Predict", key="predict"):
         "star_ratings": st.session_state.star_ratings,
         "total_votes": st.session_state.total_votes,
         "helpful_votes": st.session_state.helpful_votes,
-        "verified_purchase": st.session_state.verified_purchase,
+        "verified_purchase": st.session_state.verified_purchase
     }
-    
-    
-    prediction = predict(model_to_use, SCALER, user_review)  
+    valid, message = validate_input_data(user_review)
+    if valid:
 
-    st.write(f"Based on {selected_model}, your Review is {prediction}!")
+        prediction = predict(model_to_use, SCALER, user_review)  
 
+        st.write(f"Based on {selected_model}, your Review is {prediction}!")
+    else:
+        st.write(message)  
+
+        
 
 
