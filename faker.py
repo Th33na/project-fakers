@@ -13,7 +13,7 @@ st.set_page_config(
 
 
 st.write("Welcome to Project Fakers")
-st.write("Helping you spot a bias review")
+st.write("Helping you spot a biased review!")
 
 
 st.text_area("Review", key="review_string", value="", height=5, max_chars=500)
