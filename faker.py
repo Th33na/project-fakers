@@ -13,11 +13,12 @@ st.set_page_config(
 
 
 st.write("Welcome to Project Fakers")
-st.write("Helping you spot a bias review")
+st.write("Helping you spot a biased review!")
 
 
 st.text_area("Review", key="review_string", value="", height=5, max_chars=5000)
 st.radio("Star Ratings", STAR_RATINGS, horizontal=True, key="star_ratings")
+
 col1, col2 = st.columns(2)
 with col1:
     st.number_input("Total Votes", key="total_votes", min_value=0)
