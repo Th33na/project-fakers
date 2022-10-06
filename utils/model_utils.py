@@ -48,7 +48,7 @@ def predict(model, scaler, user_review):
 
     prediction = model.predict(user_review_scaled)
     
-    return "Not Bias" if prediction else "Bias"
+    return "Bias" if prediction else "Not Bias"
 
 
 def validate_input_data(user_review):
