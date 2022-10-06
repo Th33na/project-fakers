@@ -32,7 +32,7 @@ def load_scaler():
 def predict(model, scaler, user_review):
     # predicts the whether a review is bias or not, depending on the model selected
 
-    
+    review = user_review.get("review", "")
     verified_purchase = 1 if user_review.get("verified_purchase", False) else 0
 
     user_review_dict={'competitor mentioned': get_mentions(review.lower()), 
