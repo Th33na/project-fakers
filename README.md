@@ -17,19 +17,22 @@ This project utilizes a lot of different add ons, please make sure you have all 
 
 * [scikit-learn](https://scikit-learn.org/stable/index.html) - Tools for machine learning and statistical modeling including classification, regression, clustering and dimensionality reduction
 
-* [numpy](https://https://numpy.org/) - Loaded in, not used in the framework, but could be used in future editions.
+* [JSON](https://www.json.org/json-en.html) - Used for serializing structured data and exchanging it over a network, typically between a server and web applications.
 
 * [Matplotlib 4.0](https://matplotlib.org/) - For plotting graphs and charts that appear below the code.
 
-* [sqlalchemy v1.4.32](https://github.com/sqlalchemy/sqlalchemy) - For running SQL operations for the database.
+* [joblib](https://joblib.readthedocs.io/en/latest/#) - Tools to provide lightweight pipelining in Python.
 
 * [Holoviews](https://holoviews.org/) - For streamlit data visulization
 
 * [hvplot v0.8.0](https://github.com/holoviz/hvplot#readme) - For creating interactive and more detailed plots.
 
-* [language-tool](https://pypi.org/project/language-tool-python/) - To detect grammar errors and spelling mistakes.
+* [Word Clouds](https://www.wordclouds.com/) - Visual representations of words that give greater prominence to words that appear more frequently.
 
 ![image](https://user-images.githubusercontent.com/105394703/193184354-0d034e41-599d-41c9-9bfd-2cef182bfb09.png)
+
+![image](https://user-images.githubusercontent.com/105394703/194219443-706b99d6-7c75-4ff0-926a-a2c911993529.png)
+
 
 
 ### Algorithms performed
