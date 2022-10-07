@@ -49,7 +49,20 @@ This project utilizes a lot of different add ons, please make sure you have all 
 url = "https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Home_Entertainment_v1_00.tsv.gz"
 reviews_df = pd.read_csv("amazon_reviews_us_Home_Entertainment_v1_00.csv",sep="\\t",engine = "python",na_values=["\\N"])
 ```
+### Open Google Colab using following commands
+```
+https://colab.research.google.com/drive/1kYUoVm7P6hW7s0ii8jrFyliRJ3bZqd47?usp=sharing
+```
 
+### How to run it locally using following commands
+```
+pip install streamlit
+```
+on your local terminal clone our repo then 
+```
+streamlit run faker.py
+```
+or you can play with our [Fakers Application](https://th33na-project-fakers-faker-hgbyfc.streamlitapp.com/)
 
 # Contributors
 
