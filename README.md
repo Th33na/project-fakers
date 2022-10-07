@@ -23,7 +23,7 @@ This project utilizes a lot of different add ons, please make sure you have all 
 
 * [joblib](https://joblib.readthedocs.io/en/latest/#) - Tools to provide lightweight pipelining in Python.
 
-* [Holoviews](https://holoviews.org/) - For streamlit data visulization
+* [Holoviews](https://holoviews.org/) - For Colab data visulization
 
 * [hvplot v0.8.0](https://github.com/holoviz/hvplot#readme) - For creating interactive and more detailed plots.
 
