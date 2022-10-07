@@ -11,7 +11,7 @@ We are set on creating a machine learning model that can predict whether an onli
 
 This project utilizes a lot of different add ons, please make sure you have all these and they are up to date:
 
-* [Google Colab](https://colab.research.google.com//) - For the notebook creation and running of the code.
+* [Google Colab](https://colab.research.google.com//) - For the notebook creation and running of the code along with visualization.
 
 * [pandas 1.4.3](https://github.com/pandas-dev/pandas/blob/main/README.md) - For reading the csv files and other operations.
 
