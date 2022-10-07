@@ -1,7 +1,5 @@
 pandas
 numpy
-bokeh
-hvplot
 streamlit
 streamlit-multipage
-sklearn
+
